@@ -1,0 +1,275 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+.navber{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    
+    padding: 5px 20px;
+    text-align: center;
+    box-shadow: 0 2px 5px gray;
+}
+nav ul li{
+    display: inline-block;
+    list-style-type: none;
+}
+nav ul li a{
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: red;
+    padding: 5px 10px;
+    font-family: sans-serif;
+}
+span{
+   color: tomato;
+}
+nav ul li a:hover{
+    text-decoration: underline;
+    background-color: blue;
+    border-radius: 50px;
+    transition: .5s;
+}
+
+.btn{
+    text-decoration: none;
+    background-color: tomato;
+    padding: 5px 10px;
+    border-radius: 10px;
+    color: white;
+    transition: .5s;
+    display: inline-block;
+}
+.btn:hover{
+    box-shadow: 2px 2px 5px gray;
+    transform: scale(1.2);
+    background-color: gray;
+    color: white;
+}
+/* hero section start */
+.hero-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 90vh;
+    padding: 0 30px;
+}
+.hero-container div{
+   width: 50%;
+}
+img{
+    width: 100%;
+}
+#hero-img{
+    display: block;
+    margin: 0 auto;
+    width: 300px;
+    border-radius: 50%;
+    border: 5px solid tomato;
+}
+.hero-text{
+    color: #333;
+    font-size: 2rem;
+}
+/* about me section */
+#about-section{
+    background-color: #ccc;
+    padding: 0 30px;
+}
+.section-title{
+    text-align: center;
+    padding-top: 30px;
+}
+.hr-style{
+    width: 100px;
+    border: 2px solid tomato;
+    border-radius: 3px;
+    margin: 0 auto;
+
+}
+.about-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.about-container div{
+    width: 50%;
+}
+#about-img{
+    width: 300px;
+    border: 2px solid black;
+}
+.about-text{
+    line-height: 1.5;
+    font-size: 1.2rem;
+}
+
+/* skill section start here  */
+#skill-section{
+    min-height: 80vh;
+}
+.skill-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 10px 10px;
+}
+.skill-card{
+    width: 125px;
+    background-color: tomato;
+    text-align: center;
+    border-radius: 10px;
+    margin: 10px;
+    transition: 0.5s;
+}
+.skill-card-style{
+    font-size: 5rem;
+    color: white;
+}
+.skill-card h2{
+    color: white;
+    font-size: 1rem;
+}
+.skill-card:hover{
+    background-color: #333;
+    transform: scale(1.1);
+}
+/* service section start here  */
+.service-container{
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: center; */
+}
+#service-section{
+    background-color: #ccc;
+}
+.service-card{
+    width: 250px;
+    background-color: white;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+}
+.service-icon{
+    font-size: 5rem;
+    color: tomato;
+}
+/* contract section start here  */
+.contract-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+
+}
+form{
+    max-width: 300px;
+    width: 100%;
+    box-shadow: 2px 2px 5px gray;
+    border-radius: 10px;
+    
+}
+input,textarea{
+    width: 100%;
+    resize: none;
+    padding: 10px;
+    border-radius: 10px;
+    outline: none;
+    border: 1px solid black;
+    background-color: rgba(128, 128, 128, 0.114);
+}
+input:focus,textarea:focus{
+    outline: none;
+}
+.form-control{
+    margin: 10px;
+}
+input,textarea:focus{
+    outline: none;
+}
+input[type=submit]{
+    width: 150px;
+    display: block;
+    margin-left:auto ;
+    border: none;
+    cursor: pointer;
+}
+
+/* footer section start  */
+footer{
+    background-color: black;
+    color: white;
+    padding: 10px;
+    min-height: 10vh;
+    
+
+}
+.footer-container{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.footer-container div{
+width: 50%;
+}
+.social-icon{
+background-color: aliceblue;
+color: black;
+font-size: 1.5rem;
+border-radius: 50%;
+padding: 10px;
+}
+.social-icon:hover{
+    background-color: tomato;
+    transition: .05s;
+    margin:5px ;
+}
+.heart-icon{
+    color: red;
+    font-size:1.5rem ;
+}
+
+
+
+
+
+@media screen and (max-width:700px) {
+     .navber{
+        flex-direction: column;
+    }
+    nav ul li{
+        display: block;
+        text-align: center;
+        margin: 10px;
+    }
+    /* hero section start here */
+    .hero-container{
+        flex-direction: column;
+
+    }
+    .hero-container div{
+        text-align: center;
+        width: 100%;
+    }
+    /* about section start here */
+    .about-container{
+        flex-direction: column;
+    }
+    .about-container div{
+        padding: 20px;
+        width: 100%;
+    }
+    .footer-container{
+        flex-direction: column;
+    }
+    .footer-container div{
+        width: 100%;
+    }
+}
